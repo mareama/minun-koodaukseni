@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+
+  overflow-x:hidden;
+  overflow-y:auto;
+
+  background:
+    linear-gradient(135deg,
+    #3b0012,
+    #69001f,
+    #8f2347);
+
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+
+  padding:40px 0;
+
+  color:white;
+
+  font-family:"Poppins", sans-serif;
+}
+
+/* KORTTI */
+
+.card{
+  position:relative;
+
+  width:90%;
+  max-width:700px;
+
+  padding:55px;
+
+  border-radius:35px;
+
+  background:rgba(255,255,255,0.05);
+
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  text-align:center;
+
+  box-shadow:
+    0 0 50px rgba(255,105,180,0.15),
+    0 10px 40px rgba(0,0,0,0.4);
+
+  z-index:2;
+}
+
+/* OTSIKKO */
+
+h1{
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:5rem;
+
+  font-weight:300;
+
+  color:#ffe0ea;
+
+  letter-spacing:2px;
+
+  margin-bottom:10px;
+}
+
+h2{
+  font-family:"Cormorant Garamond", serif;
+
+  text-transform:uppercase;
+
+  letter-spacing:3px;
+
+  font-size:1rem;
+
+  font-weight:400;
+
+  margin-bottom:40px;
+
+  color:#ffe6ee;
+}
+
+/* TEKSTI */
+
+p{
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:1.5rem;
+
+  line-height:1.5;
+
+  color:#fff2f6;
+}
+
+.decor{
+  margin:25px 0 10px 0;
+
+  font-size:1.3rem;
+
+  color:#ffd6e2;
+
+  letter-spacing:6px;
+
+  opacity:0.8;
+}
+
+.date{
+  margin-top:10px;
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:2rem;
+
+  color:#ffe0ea;
+
+  font-style:italic;
+}
+
+.flowersText{
+  margin-top:20px;
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:2.2rem;
+
+  color:#fff0f5;
+
+  font-style:italic;
+}
+
+/* NAPPI */
+
+button{
+  margin-top:35px;
+
+  padding:14px 35px;
+
+  border:none;
+
+  border-radius:999px;
+
+  background:
+    linear-gradient(to bottom,
+    #ffb5c8,
+    #d85c84);
+
+  color:white;
+
+  font-family:
+    "Cormorant Garamond", serif;
+
+  font-size:1.5rem;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  border:
+    1px solid rgba(255,255,255,0.4);
+
+  box-shadow:
+    0 0 30px rgba(255,182,193,0.5);
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+/* MESSAGE */
+
+.message{
+  margin-top:35px;
+
+  font-family:
+    "Cormorant Garamond", serif;
+
+  font-size:1.45rem;
+
+  line-height:1.5;
+
+  color:#fff0f5;
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.15);
+
+  padding:30px;
+
+  border-radius:25px;
+
+  display:none;
+}
+
+/* KUVA */
+
+#bestiePic{
+  width:100%;
+
+  max-width:360px;
+
+  margin-top:25px;
+
+  border-radius:25px;
+
+  display:none;
+
+  border:
+    2px solid rgba(255,255,255,0.25);
+
+  box-shadow:
+    0 0 30px rgba(255,182,193,0.2),
+    0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* KUKAT */
+
+.flower{
+  position:fixed;
+
+  bottom:0;
+
+  width:240px;
+
+  opacity:0.95;
+
+  pointer-events:none;
+
+  z-index:0;
+}
+
+.leftFlower{
+  left:0;
+}
+
+.rightFlower{
+  right:0;
+}
+
+/* SYDÄMET */
+
+.heart{
+  position:absolute;
+
+  color:#ffc8d7;
+
+  animation:fall linear infinite;
+
+  opacity:0.7;
+}
+
+@keyframes fall{
+
+  from{
+    transform:translateY(-100px);
+  }
+
+  to{
+    transform:translateY(110vh);
+  }
+} /* ISOT ETUKUKAT */
+
+.bigFlower{
+  position:fixed;
+
+  bottom:-20px;
+
+  width:340px;
+
+  z-index:1;
+
+  pointer-events:none;
+
+  opacity:0.95;
+}
+
+.leftBigFlower{
+  left:-40px;
+}
+
+.rightBigFlower{
+  right:-40px;
+}
+
+/* KORTTI KUKKIEN ETEEN */
+
+.card{
+  z-index:5;
+}.insidePic{
+
+  width:100%;
+
+  max-width:420px;
+
+  border-radius:25px;
+
+  margin-top:20px;
+
+  border:2px solid rgba(255,255,255,0.2);
+
+  box-shadow:
+    0 0 25px rgba(255,182,193,0.2);
+
+}
